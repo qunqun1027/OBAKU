@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OBAKU</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <style>
+        *{ margin: 0; padding: 0;}
+        #page{}
+        #header{
+/*            min-width: 1200px;*/
+            width: 100%;
+            height: 110px;
+            background: rgba(255,255,255,0.8);
+            position: relative;
+        }
+        .inhead{
+            position: fixed;
+            width: 100%;
+            height: 110px;
+            z-index: 99;
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+        a{ 
+            text-decoration: none;
+            color: #666;
+        }
+        .logo{
+            width: 9%;
+            position: absolute;
+            left: 42%;
+            bottom: 0;
+            
+        }
+        .logo img{
+            
+            
+        }
+        .menu{
+            width: 100%;
+            height: inherit;
+            position: relative;
+            border-bottom: 1px solid #ccc;
+        }
+        .menu ul{
+            display: inline-block;
+            position: absolute;
+            width: 30%;
+            bottom: 0;
+           
+        }
+        .menu ul li{
+            display: inline-block;
+            margin: 20px;
+            
+        }
+        .left-ul{
+            text-align: left;
+            height: auto;
+            margin-left: 5%;
+        }
+      
+        .rigth-ul{
+            text-align: right;
+            height: auto;
+            right: 5%;
+           
+            
+            
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .main-img img{
+            width: 100%;
+            height: 100%;  
+        }
+        /*title*/
+        .title{
+            width: 100%;
+            height: auto;
+            margin-bottom: 50px;
+            position: relative;
+            margin-top: 100px;
+            
+        }
+        .title >h1{
+/*            border: 1px solid red;*/
+            width: 25%;
+            margin-left: 40%;
+            margin-bottom: 20px;
+            
+        }
+        .title >h3{
+            width: 70%;
+            margin-left: 15%;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #666;
+        }
+        #containerbox{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin-top: 30px;
+        }
+        .container-top{
+           width: 80%;
+           height: 33.33%; 
+           margin-left: auto;
+           margin-right: auto;
+        }
+        .content_1, .content_2, .content_3{
+            width: 33%;
+            float: left; 
+            
+        }
+        .content_1 a >img, .content_2 a >img, .content_3 a >img{
+            margin-left: auto;
+            margin-right: auto; 
+            width: 100%;
+            height: auto;
+            
+            
+        }
+    
+        
+        #menubtn{
+            display: none;
+        }
+       
+        /*  휴대폰(599px 이하) */
+    @media screen and (max-width: 599px){
+            #header{
+            position: relative;
+            background: #fff;
+            height: 20px;
+            
+        }
+            .content_1, .content_2, .content_3{
+                width: 100%;
+                border: 3px solid blue;
+                }
+            #menubtn{
+                padding: 6px 12px;
+                border: 1px solid #aaa;
+                border-radius: 5px;
+                background: #fff;
+                cursor: pointer;
+                position: absolute;
+                top: 20px; right: 15px;
+            }
+            .menu{display: none;}
+       
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="page">
+       <!--header-->
+        <div id="header">
+           <div class="inhead">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/img_obaku_logo.png" alt="logo">
+                    </a>
+                </div>
+                <button id="menubtn">
+                    <i class="fas fa-bars"></i>
+</button>
+                <div class="menu">
+                    <ul class="left-ul">
+                       <a href="#"><li>컬렉션</li></a>
+                        <a href="#"><li>WOMEN</li></a>
+                        <a href="#"><li>MEN</li></a>
+
+</ul>
+                    <ul class="rigth-ul">
+                        <a href="#"><li>ABOUT </li></a>
+                        <a href="#"><li>STORES</li></a>
+                        <a href="#"><li>고객서비스</li></a>
+
+                    </ul>
+
+                </div>
+           </div>
+        </div>
+       <!--main_img--> 
+       <div class="main">
+           <div class="main-img">
+                <img src="images/main_01.png" alt="main_01">
+           </div>
+        </div>
+        <div id="containerbox">
+            <div class="title">
+                <h1>FEEL THE MOMENT</h1>
+                <h3>OBAKU IS A COLLECTION OF DANISH DESIGNER WATCHES</h3>
+                <h3>INSPIRED BY THE CLASSIC DANISH DESIGN TRADITIONS COMBINED WITH THE ASIAN ZEN PHILOSOPHY</h3>
+            </div>
+            <div class="container-top">
+                <div class="content_1">
+                    <a href="#"><img src="images/content-1.png" alt="content-1"></a>
+                </div>
+                <div class="content_2">
+                      <a href="#"><img src="images/content-2.png" alt="content-1"></a>
+                </div>
+                <div class="content_3">
+                      <a href="#"><img src="images/content-3.png" alt="content-1"></a>
+                </div>
+            </div>
+            <div class="container-center">
+                
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
